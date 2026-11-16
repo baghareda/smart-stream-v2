@@ -27,21 +27,24 @@ fetch(furl)
 })
 .then(function(channels){
 
+    let favoritechannels = []
+
     function displaychannels(channellist){
 
         channelslist.innerHTML = ""
         for (let channel of channellist)
         {
-            channelslist.innerHTML += `<button class="channel-button bg-gray-700 hover:bg-gray-600 p-4 mb-4
+            channelslist.innerHTML += `<button class=" flex justify-between items-center 
+            channel-button bg-gray-700 hover:bg-gray-600 p-4 mb-4
             rounded-lg cursor-pointer w-full text-left">${channel.channelNumber}
-            - ${channel.name}</button>`
+            - ${channel.name} <span class ="text-yellow-400 ">☆</span> </button>`
         }
         let allchannelBtn = document.querySelectorAll(".channel-button")
 
         allchannelBtn.forEach(function(button){
         button.addEventListener("click", function(){
 
-            console.log("channel licked")
+            console.log("channel clicked")
 
             let selectedchannel = channellist.find(function(channel){
                 return button.textContent.startsWith(channel.channelNumber)
@@ -54,7 +57,32 @@ fetch(furl)
             displaychannel(selectedchannel)
         })
     })
-    }
+
+
+    let allstars = document.querySelectorAll(".channel-button span")
+
+    allstars.forEach(function(span, favchannel)
+    {
+        span.addEventListener("click", function(event){
+            event.stopPropagation()
+
+            let clickedchannel = channellist[favchannel]
+            if (span.textContent === "☆"){
+            span.textContent = "★"
+
+            favoritechannels.push(clickedchannel)
+
+            }else {
+            span.textContent = "☆"
+
+            favoritechannels = favoritechannels.filter(function (favchannel){
+                    return favchannel.channelNumber !== clickedchannel.channelNumber
+                })
+            }
+
+        })
+    })
+}
      displaychannels(channels)
 
     let sportchannels = channels.filter(function(channel){
@@ -68,7 +96,7 @@ fetch(furl)
     let musicchannels = channels.filter(function(channel){
         return channel.category === "MUSIQUE"
     })
-
+ 
     let sport = document.querySelector("#sport")
     sport.addEventListener("click", function()
     {
