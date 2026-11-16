@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Stream</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="bg-gray-900">
+    <header>
+        <div class="logo text-2xl text-[#4cc9f0] p-4 font-sans">📺 SMART STREAM</div>
+
+            <input id="search-bar" type="text" placeholder="Enter the channel you want to search for"
+             class="search-bar text-xl text-gray-600 rounded-lg bg-white w-[1400px] p-4 ml-6 font-mono">
+
+    </header>
+    <div id="sidebar-trigger" class="fixed left-0 h-screen w-3 z-40 top-0 bg-[#f72585]"></div>
+    <div id="category-sidebar" class= "fixed left-0 h-screen w-64 bg-gray-800 z-50 
+    -translate-x-full p-6 bg-[#e0aaff] transition-transform duration-500 ease-in-out rounded-lg">
+
+        <div class="flex justify-between items-center mb-8">
+            <h2 class="text-xl font-bold text-[#4cc9f0]">Category</h2>
+            <button id="close-sidebar" class="text-[#f72585] text-2xl cursor-pointer">x</button>
+        </div>
+
+        <button id="all-chanels" class="block w-full text-left text-white p-3 rounded-lg hover:bg-gray-700">All-chanels</button>
+        <button id="sport" class="block w-full text-left text-white p-3 rounded-lg hover:bg-gray-700">Sport</button>
+        <button id="news" class="block w-full text-left text-white p-3 rounded-lg hover:bg-gray-700">News</button>
+        <button id="music" class="block w-full text-left text-white p-3 rounded-lg hover:bg-gray-700">Music</button>
+        <button id="black-list" class="block w-full text-left text-white p-3 m-2 rounded-lg bg-black hover:bg-red-700">Black-List</button>
+        <button id="favorite" class="block w-full text-left text-green p-3 m-2 rounded-lg bg-white hover:bg-green-700">Favorite ★</button>
+
+
+    </div>  
+
+    <div id="main-content" class="main-content grid grid-cols-[40%_60%] gap-6 p-6">
+
+    <div id="channels-section" class="channels-section text-[#4cc9f0] bg-gray-800 rounded-xl min-h-[650px]">
+
+        <h2 class="text-xl font-bold mb-6 p-6">TV Channels :</h2>
+        <div id="channels-list" class="h-[550px] overflow-y-auto rounded-lg"></div>
+
+    </div>
+
+        <div id="player-section" class="bg-gray-800 rounded-xl min-h-[650px] text-[#4cc9f0] text-xl font-bold mb-6 p-6">
+            <h2 class="text-xl font-bold mb-6 p-6"> Now Playing :</h2>
+            <div id="player"></div>
+            <img id="loading-spiner" src="images/infinfity.gif" alt="loadingspiner" class="hidden">
+        </div>
+</div>
+
+<script type="module" src="./js/main.js"></script>
+</body>
+</html>
