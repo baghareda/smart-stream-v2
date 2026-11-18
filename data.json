@@ -13,7 +13,9 @@
       "startTime": "19:07",
       "endTime": "20:12",
       "progressPercentage": 22
-    }
+    },
+    "isFavorite": false,
+    "isBlackList": false
   },
   {
     "id": "2",
@@ -29,7 +31,9 @@
       "startTime": "20:14",
       "endTime": "21:19",
       "progressPercentage": 39
-    }
+    },
+    "isFavorite": false,
+    "isBlackList": false
   },
   {
     "id": "3",
@@ -45,7 +49,9 @@
       "startTime": "21:21",
       "endTime": "22:26",
       "progressPercentage": 56
-    }
+    },
+    "isFavorite": false,
+    "isBlackList": false
   },
   {
     "id": "4",
@@ -61,7 +67,9 @@
       "startTime": "22:28",
       "endTime": "23:33",
       "progressPercentage": 73
-    }
+    },
+    "isFavorite": false,
+    "isBlackList": false
   },
   {
     "id": "5",
@@ -77,7 +85,9 @@
       "startTime": "18:35",
       "endTime": "19:40",
       "progressPercentage": 90
-    }
+    },
+    "isFavorite": false,
+    "isBlackList": false
   },
   {
     "id": "6",
@@ -93,7 +103,9 @@
       "startTime": "19:42",
       "endTime": "20:47",
       "progressPercentage": 16
-    }
+    },
+    "isFavorite": false,
+    "isBlackList": false
   },
   {
     "id": "7",
@@ -109,7 +121,9 @@
       "startTime": "20:49",
       "endTime": "21:54",
       "progressPercentage": 33
-    }
+    },
+    "isFavorite": false,
+    "isBlackList": false
   },
   {
     "id": "8",
@@ -125,7 +139,9 @@
       "startTime": "21:56",
       "endTime": "22:01",
       "progressPercentage": 50
-    }
+    },
+    "isFavorite": false,
+    "isBlackList": false
   },
   {
     "id": "9",
@@ -141,7 +157,9 @@
       "startTime": "22:03",
       "endTime": "23:08",
       "progressPercentage": 67
-    }
+    },
+    "isFavorite": false,
+    "isBlackList": false
   },
   {
     "id": "10",
@@ -157,7 +175,9 @@
       "startTime": "18:10",
       "endTime": "19:15",
       "progressPercentage": 84
-    }
+    },
+    "isFavorite": false,
+    "isBlackList": false
   },
   {
     "id": "11",
@@ -173,7 +193,9 @@
       "startTime": "19:17",
       "endTime": "20:22",
       "progressPercentage": 10
-    }
+    },
+    "isFavorite": false,
+    "isBlackList": false
   },
   {
     "id": "12",
@@ -189,7 +211,9 @@
       "startTime": "20:24",
       "endTime": "21:29",
       "progressPercentage": 27
-    }
+    },
+    "isFavorite": false,
+    "isBlackList": false
   },
   {
     "id": "13",
@@ -205,7 +229,9 @@
       "startTime": "21:31",
       "endTime": "22:36",
       "progressPercentage": 44
-    }
+    },
+    "isFavorite": false,
+    "isBlackList": false
   },
   {
     "id": "14",
@@ -221,7 +247,9 @@
       "startTime": "22:38",
       "endTime": "23:43",
       "progressPercentage": 61
-    }
+    },
+    "isFavorite": false,
+    "isBlackList": false
   },
   {
     "id": "15",
@@ -237,7 +265,9 @@
       "startTime": "18:45",
       "endTime": "19:50",
       "progressPercentage": 78
-    }
+    },
+    "isFavorite": false,
+    "isBlackList": false
   },
   {
     "id": "16",
@@ -253,7 +283,9 @@
       "startTime": "19:52",
       "endTime": "20:57",
       "progressPercentage": 95
-    }
+    },
+    "isFavorite": false,
+    "isBlackList": false
   },
   {
     "id": "17",
@@ -269,7 +301,9 @@
       "startTime": "20:59",
       "endTime": "21:04",
       "progressPercentage": 21
-    }
+    },
+    "isFavorite": false,
+    "isBlackList": false
   },
   {
     "id": "18",
@@ -285,7 +319,9 @@
       "startTime": "21:06",
       "endTime": "22:11",
       "progressPercentage": 38
-    }
+    },
+    "isFavorite": false,
+    "isBlackList": false
   },
   {
     "id": "19",
@@ -301,7 +337,9 @@
       "startTime": "22:13",
       "endTime": "23:18",
       "progressPercentage": 55
-    }
+    },
+    "isFavorite": false,
+    "isBlackList": false
   },
   {
     "id": "20",
@@ -317,7 +355,9 @@
       "startTime": "18:20",
       "endTime": "19:25",
       "progressPercentage": 72
-    }
+    },
+    "isFavorite": false,
+    "isBlackList": false
   },
   {
     "id": "21",
@@ -333,7 +373,9 @@
       "startTime": "19:27",
       "endTime": "20:32",
       "progressPercentage": 89
-    }
+    },
+    "isFavorite": false,
+    "isBlackList": false
   },
   {
     "id": "22",
@@ -349,7 +391,9 @@
       "startTime": "20:34",
       "endTime": "21:39",
       "progressPercentage": 15
-    }
+    },
+    "isFavorite": false,
+    "isBlackList": false
   },
   {
     "id": "23",
@@ -365,7 +409,9 @@
       "startTime": "21:41",
       "endTime": "22:46",
       "progressPercentage": 32
-    }
+    },
+    "isFavorite": false,
+    "isBlackList": false
   },
   {
     "id": "24",
@@ -381,7 +427,9 @@
       "startTime": "22:48",
       "endTime": "23:53",
       "progressPercentage": 49
-    }
+    },
+    "isFavorite": false,
+    "isBlackList": false
   },
   {
     "id": "25",
@@ -397,7 +445,9 @@
       "startTime": "18:55",
       "endTime": "19:00",
       "progressPercentage": 66
-    }
+    },
+    "isFavorite": false,
+    "isBlackList": false
   },
   {
     "id": "26",
@@ -413,7 +463,9 @@
       "startTime": "19:02",
       "endTime": "20:07",
       "progressPercentage": 83
-    }
+    },
+    "isFavorite": false,
+    "isBlackList": false
   },
   {
     "id": "27",
@@ -429,7 +481,9 @@
       "startTime": "20:09",
       "endTime": "21:14",
       "progressPercentage": 9
-    }
+    },
+    "isFavorite": false,
+    "isBlackList": false
   },
   {
     "id": "28",
@@ -445,7 +499,9 @@
       "startTime": "21:16",
       "endTime": "22:21",
       "progressPercentage": 26
-    }
+    },
+    "isFavorite": false,
+    "isBlackList": false
   },
   {
     "id": "29",
@@ -461,7 +517,9 @@
       "startTime": "22:23",
       "endTime": "23:28",
       "progressPercentage": 43
-    }
+    },
+    "isFavorite": false,
+    "isBlackList": false
   },
   {
     "id": "30",
@@ -477,7 +535,9 @@
       "startTime": "18:30",
       "endTime": "19:35",
       "progressPercentage": 60
-    }
+    },
+    "isFavorite": false,
+    "isBlackList": false
   },
   {
     "id": "31",
@@ -493,7 +553,9 @@
       "startTime": "19:37",
       "endTime": "20:42",
       "progressPercentage": 77
-    }
+    },
+    "isFavorite": false,
+    "isBlackList": false
   },
   {
     "id": "32",
@@ -509,7 +571,9 @@
       "startTime": "20:44",
       "endTime": "21:49",
       "progressPercentage": 94
-    }
+    },
+    "isFavorite": false,
+    "isBlackList": false
   },
   {
     "id": "33",
@@ -525,7 +589,9 @@
       "startTime": "21:51",
       "endTime": "22:56",
       "progressPercentage": 20
-    }
+    },
+    "isFavorite": false,
+    "isBlackList": false
   },
   {
     "id": "34",
@@ -541,7 +607,9 @@
       "startTime": "22:58",
       "endTime": "23:03",
       "progressPercentage": 37
-    }
+    },
+    "isFavorite": false,
+    "isBlackList": false
   },
   {
     "id": "35",
@@ -557,7 +625,9 @@
       "startTime": "18:05",
       "endTime": "19:10",
       "progressPercentage": 54
-    }
+    },
+    "isFavorite": false,
+    "isBlackList": false
   },
   {
     "id": "36",
@@ -573,7 +643,9 @@
       "startTime": "19:12",
       "endTime": "20:17",
       "progressPercentage": 71
-    }
+    },
+    "isFavorite": false,
+    "isBlackList": false
   },
   {
     "id": "37",
@@ -589,7 +661,9 @@
       "startTime": "20:19",
       "endTime": "21:24",
       "progressPercentage": 88
-    }
+    },
+    "isFavorite": false,
+    "isBlackList": false
   },
   {
     "id": "38",
@@ -605,7 +679,9 @@
       "startTime": "21:26",
       "endTime": "22:31",
       "progressPercentage": 14
-    }
+    },
+    "isFavorite": false,
+    "isBlackList": false
   },
   {
     "id": "39",
@@ -621,7 +697,9 @@
       "startTime": "22:33",
       "endTime": "23:38",
       "progressPercentage": 31
-    }
+    },
+    "isFavorite": false,
+    "isBlackList": false
   },
   {
     "id": "40",
@@ -637,7 +715,9 @@
       "startTime": "18:40",
       "endTime": "19:45",
       "progressPercentage": 48
-    }
+    },
+    "isFavorite": false,
+    "isBlackList": false
   },
   {
     "id": "41",
@@ -653,7 +733,9 @@
       "startTime": "19:47",
       "endTime": "20:52",
       "progressPercentage": 65
-    }
+    },
+    "isFavorite": false,
+    "isBlackList": false
   },
   {
     "id": "42",
@@ -669,7 +751,9 @@
       "startTime": "20:54",
       "endTime": "21:59",
       "progressPercentage": 82
-    }
+    },
+    "isFavorite": false,
+    "isBlackList": false
   },
   {
     "id": "43",
@@ -685,7 +769,9 @@
       "startTime": "21:01",
       "endTime": "22:06",
       "progressPercentage": 8
-    }
+    },
+    "isFavorite": false,
+    "isBlackList": false
   },
   {
     "id": "44",
@@ -701,7 +787,9 @@
       "startTime": "22:08",
       "endTime": "23:13",
       "progressPercentage": 25
-    }
+    },
+    "isFavorite": false,
+    "isBlackList": false
   },
   {
     "id": "45",
@@ -717,7 +805,9 @@
       "startTime": "18:15",
       "endTime": "19:20",
       "progressPercentage": 42
-    }
+    },
+    "isFavorite": false,
+    "isBlackList": false
   },
   {
     "id": "46",
@@ -733,7 +823,9 @@
       "startTime": "19:22",
       "endTime": "20:27",
       "progressPercentage": 59
-    }
+    },
+    "isFavorite": false,
+    "isBlackList": false
   },
   {
     "id": "47",
@@ -749,7 +841,9 @@
       "startTime": "20:29",
       "endTime": "21:34",
       "progressPercentage": 76
-    }
+    },
+    "isFavorite": false,
+    "isBlackList": false
   },
   {
     "id": "48",
@@ -765,7 +859,9 @@
       "startTime": "21:36",
       "endTime": "22:41",
       "progressPercentage": 93
-    }
+    },
+    "isFavorite": false,
+    "isBlackList": false
   },
   {
     "id": "49",
@@ -781,7 +877,9 @@
       "startTime": "22:43",
       "endTime": "23:48",
       "progressPercentage": 19
-    }
+    },
+    "isFavorite": false,
+    "isBlackList": false
   },
   {
     "id": "50",
@@ -797,7 +895,9 @@
       "startTime": "18:50",
       "endTime": "19:55",
       "progressPercentage": 36
-    }
+    },
+    "isFavorite": false,
+    "isBlackList": false
   },
   {
     "id": "51",
@@ -813,7 +913,9 @@
       "startTime": "19:57",
       "endTime": "20:02",
       "progressPercentage": 53
-    }
+    },
+    "isFavorite": false,
+    "isBlackList": false
   },
   {
     "id": "52",
@@ -829,7 +931,9 @@
       "startTime": "20:04",
       "endTime": "21:09",
       "progressPercentage": 70
-    }
+    },
+    "isFavorite": false,
+    "isBlackList": false
   },
   {
     "id": "53",
@@ -845,7 +949,9 @@
       "startTime": "21:11",
       "endTime": "22:16",
       "progressPercentage": 87
-    }
+    },
+    "isFavorite": false,
+    "isBlackList": false
   },
   {
     "id": "54",
@@ -861,7 +967,9 @@
       "startTime": "22:18",
       "endTime": "23:23",
       "progressPercentage": 13
-    }
+    },
+    "isFavorite": false,
+    "isBlackList": false
   },
   {
     "id": "55",
@@ -877,7 +985,9 @@
       "startTime": "18:25",
       "endTime": "19:30",
       "progressPercentage": 30
-    }
+    },
+    "isFavorite": false,
+    "isBlackList": false
   },
   {
     "id": "56",
@@ -893,7 +1003,9 @@
       "startTime": "19:32",
       "endTime": "20:37",
       "progressPercentage": 47
-    }
+    },
+    "isFavorite": false,
+    "isBlackList": false
   },
   {
     "id": "57",
@@ -909,7 +1021,9 @@
       "startTime": "20:39",
       "endTime": "21:44",
       "progressPercentage": 64
-    }
+    },
+    "isFavorite": false,
+    "isBlackList": false
   },
   {
     "id": "58",
@@ -925,7 +1039,9 @@
       "startTime": "21:46",
       "endTime": "22:51",
       "progressPercentage": 81
-    }
+    },
+    "isFavorite": false,
+    "isBlackList": false
   },
   {
     "id": "59",
@@ -941,7 +1057,9 @@
       "startTime": "22:53",
       "endTime": "23:58",
       "progressPercentage": 7
-    }
+    },
+    "isFavorite": false,
+    "isBlackList": false
   },
   {
     "id": "60",
@@ -957,7 +1075,9 @@
       "startTime": "18:00",
       "endTime": "19:05",
       "progressPercentage": 24
-    }
+    },
+    "isFavorite": false,
+    "isBlackList": false
   },
   {
     "id": "61",
@@ -973,7 +1093,9 @@
       "startTime": "19:07",
       "endTime": "20:12",
       "progressPercentage": 41
-    }
+    },
+    "isFavorite": false,
+    "isBlackList": false
   },
   {
     "id": "62",
@@ -989,7 +1111,9 @@
       "startTime": "20:14",
       "endTime": "21:19",
       "progressPercentage": 58
-    }
+    },
+    "isFavorite": false,
+    "isBlackList": false
   },
   {
     "id": "63",
@@ -1005,7 +1129,9 @@
       "startTime": "21:21",
       "endTime": "22:26",
       "progressPercentage": 75
-    }
+    },
+    "isFavorite": false,
+    "isBlackList": false
   },
   {
     "id": "64",
@@ -1021,7 +1147,9 @@
       "startTime": "22:28",
       "endTime": "23:33",
       "progressPercentage": 92
-    }
+    },
+    "isFavorite": false,
+    "isBlackList": false
   },
   {
     "id": "65",
@@ -1037,7 +1165,9 @@
       "startTime": "18:35",
       "endTime": "19:40",
       "progressPercentage": 18
-    }
+    },
+    "isFavorite": false,
+    "isBlackList": false
   },
   {
     "id": "66",
@@ -1053,7 +1183,9 @@
       "startTime": "19:42",
       "endTime": "20:47",
       "progressPercentage": 35
-    }
+    },
+    "isFavorite": false,
+    "isBlackList": false
   },
   {
     "id": "67",
@@ -1069,7 +1201,9 @@
       "startTime": "20:49",
       "endTime": "21:54",
       "progressPercentage": 52
-    }
+    },
+    "isFavorite": false,
+    "isBlackList": false
   },
   {
     "id": "68",
@@ -1085,7 +1219,9 @@
       "startTime": "21:56",
       "endTime": "22:01",
       "progressPercentage": 69
-    }
+    },
+    "isFavorite": false,
+    "isBlackList": false
   },
   {
     "id": "69",
@@ -1101,7 +1237,9 @@
       "startTime": "22:03",
       "endTime": "23:08",
       "progressPercentage": 86
-    }
+    },
+    "isFavorite": false,
+    "isBlackList": false
   },
   {
     "id": "70",
@@ -1117,7 +1255,9 @@
       "startTime": "18:10",
       "endTime": "19:15",
       "progressPercentage": 12
-    }
+    },
+    "isFavorite": false,
+    "isBlackList": false
   },
   {
     "id": "71",
@@ -1133,7 +1273,9 @@
       "startTime": "19:17",
       "endTime": "20:22",
       "progressPercentage": 29
-    }
+    },
+    "isFavorite": false,
+    "isBlackList": false
   },
   {
     "id": "72",
@@ -1149,7 +1291,9 @@
       "startTime": "20:24",
       "endTime": "21:29",
       "progressPercentage": 46
-    }
+    },
+    "isFavorite": false,
+    "isBlackList": false
   },
   {
     "id": "73",
@@ -1165,7 +1309,9 @@
       "startTime": "21:31",
       "endTime": "22:36",
       "progressPercentage": 63
-    }
+    },
+    "isFavorite": false,
+    "isBlackList": false
   },
   {
     "id": "74",
@@ -1181,7 +1327,9 @@
       "startTime": "22:38",
       "endTime": "23:43",
       "progressPercentage": 80
-    }
+    },
+    "isFavorite": false,
+    "isBlackList": false
   },
   {
     "id": "75",
@@ -1197,7 +1345,9 @@
       "startTime": "18:45",
       "endTime": "19:50",
       "progressPercentage": 6
-    }
+    },
+    "isFavorite": false,
+    "isBlackList": false
   },
   {
     "id": "76",
@@ -1213,7 +1363,9 @@
       "startTime": "19:52",
       "endTime": "20:57",
       "progressPercentage": 23
-    }
+    },
+    "isFavorite": false,
+    "isBlackList": false
   },
   {
     "id": "77",
@@ -1229,7 +1381,9 @@
       "startTime": "20:59",
       "endTime": "21:04",
       "progressPercentage": 40
-    }
+    },
+    "isFavorite": false,
+    "isBlackList": false
   },
   {
     "id": "78",
@@ -1245,7 +1399,9 @@
       "startTime": "21:06",
       "endTime": "22:11",
       "progressPercentage": 57
-    }
+    },
+    "isFavorite": false,
+    "isBlackList": false
   },
   {
     "id": "79",
@@ -1261,7 +1417,9 @@
       "startTime": "22:13",
       "endTime": "23:18",
       "progressPercentage": 74
-    }
+    },
+    "isFavorite": false,
+    "isBlackList": false
   },
   {
     "id": "80",
@@ -1277,6 +1435,8 @@
       "startTime": "20:00",
       "endTime": "21:00",
       "progressPercentage": 65
-    }
+    },
+    "isFavorite": false,
+    "isBlackList": false
   }
 ]

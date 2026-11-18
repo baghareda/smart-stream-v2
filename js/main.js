@@ -19,7 +19,7 @@ async function displaychannel(channel)
     loadingspiner.classList.add("hidden")
 }
 
-const furl = "https://api.npoint.io/b623f45eec11093d64aa"
+const furl = "https://6afc2ab3892984c4494b034f.mockapi.io/channels"
 
 fetch(furl)
 .then(function(response){
@@ -37,7 +37,7 @@ fetch(furl)
             channelslist.innerHTML += `<button class=" flex justify-between items-center 
             channel-button bg-gray-700 hover:bg-gray-600 p-4 mb-4
             rounded-lg cursor-pointer w-full text-left">${channel.channelNumber}
-            - ${channel.name} <span class ="text-yellow-400 ">☆</span> </button>`
+            - ${channel.name} <span class="text-yellow-400">${favoritechannels.includes(channel) ? "★" : "☆"}</span> </button>`
         }
         let allchannelBtn = document.querySelectorAll(".channel-button")
 
@@ -125,6 +125,13 @@ fetch(furl)
     allchannels.addEventListener("click", function(){
         displaychannels(channels)
         categorysidebar.classList.add("-translate-x-full")
+    })
+
+    let favorite = document.querySelector("#favorite")
+    favorite.addEventListener("click", function(){
+        displaychannels(favoritechannels)
+        categorysidebar.classList.add("-translate-x-full")
+        currentchannel = favoritechannels
     })
 
     let searchbar = document.querySelector("#search-bar")
