@@ -34,10 +34,12 @@ fetch(furl)
         channelslist.innerHTML = ""
         for (let channel of channellist)
         {
-            channelslist.innerHTML += `<div><button class=" channel-button flex justify-between items-center 
-            bg-gray-700 hover:bg-gray-600 p-4 mb-4
+            channelslist.innerHTML += `<div class=" channel-button flex 
+            justify-between items-center bg-gray-700 hover:bg-gray-600 p-4 mb-4
             rounded-lg cursor-pointer w-full text-left">${channel.channelNumber}
-            - ${channel.name} <span class="text-yellow-400">${favoritechannels.includes(channel) ? "★" : "☆"}</span> </button></div>`
+            - ${channel.name} <div><span class="text-yellow-400">
+            ${favoritechannels.includes(channel) ? "★" : "☆"}</span><button class= "black-list ml-4">⌫</button>
+            <button class= "edit ml-4">✎</button></div></div>`
         }
         let allchannelBtn = document.querySelectorAll(".channel-button")
 
