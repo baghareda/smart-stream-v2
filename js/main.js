@@ -34,10 +34,10 @@ fetch(furl)
         channelslist.innerHTML = ""
         for (let channel of channellist)
         {
-            channelslist.innerHTML += `<button class=" flex justify-between items-center 
-            channel-button bg-gray-700 hover:bg-gray-600 p-4 mb-4
+            channelslist.innerHTML += `<div><button class=" channel-button flex justify-between items-center 
+            bg-gray-700 hover:bg-gray-600 p-4 mb-4
             rounded-lg cursor-pointer w-full text-left">${channel.channelNumber}
-            - ${channel.name} <span class="text-yellow-400">${favoritechannels.includes(channel) ? "★" : "☆"}</span> </button>`
+            - ${channel.name} <span class="text-yellow-400">${favoritechannels.includes(channel) ? "★" : "☆"}</span> </button></div>`
         }
         let allchannelBtn = document.querySelectorAll(".channel-button")
 
@@ -75,9 +75,16 @@ fetch(furl)
             }else {
             span.textContent = "☆"
 
+            let chcekfavorite = currentchannel === favoritechannels
+
             favoritechannels = favoritechannels.filter(function (favchannel){
                     return favchannel.channelNumber !== clickedchannel.channelNumber
                 })
+
+                if (chcekfavorite){
+                    currentchannel = favoritechannels
+                    displaychannels(favoritechannels)
+                }
             }
 
         })
