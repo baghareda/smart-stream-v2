@@ -28,8 +28,15 @@ fetch(furl)
 .then(function(channels){
 
     let favoritechannels = []
+    let blacklistchannels = []
 
     function displaychannels(channellist){
+
+        if (channellist !== blacklistchannels){
+            channellist = channellist.filter(function(channel){
+                return !blacklistchannels.includes(channel)
+            })
+        }
 
         channelslist.innerHTML = ""
         for (let channel of channellist)
@@ -37,9 +44,9 @@ fetch(furl)
             channelslist.innerHTML += `<div class=" channel-button flex 
             justify-between items-center bg-gray-700 hover:bg-gray-600 p-4 mb-4
             rounded-lg cursor-pointer w-full text-left">${channel.channelNumber}
-            - ${channel.name} <div><span class="text-yellow-400">
-            ${favoritechannels.includes(channel) ? "★" : "☆"}</span><button class= "black-list ml-4">⌫</button>
-            <button class= "edit ml-4">✎</button></div></div>`
+            - ${channel.name} <div><span class="text-yellow-400 cursor-pointer">
+            ${favoritechannels.includes(channel) ? "★" : "☆"}</span><button data-id="${channel.id}" class="black-list ml-4 cursor-pointer">⌫</button>
+            <button class= "edit ml-4 cursor-pointer">✎</button></div></div>`
         }
         let allchannelBtn = document.querySelectorAll(".channel-button")
 
@@ -62,6 +69,42 @@ fetch(furl)
 
 
     let allstars = document.querySelectorAll(".channel-button span")
+    let allblacklist = document.querySelectorAll(".black-list")
+
+    allblacklist.forEach(function(button){
+        button.addEventListener("click", function(event){
+            event.stopPropagation()
+            console.log("blacklist clicked")
+
+            let clickedblack = channellist.find(function(channel){
+                return channel.id == button.dataset.id
+            })
+
+            if (currentchannel === blacklistchannels) {
+                let blackindex = blacklistchannels.indexOf(clickedblack)
+                blacklistchannels.splice(blackindex, 1)
+
+                for (let list of [channels, sportchannels, newschannels, musicchannels, favoritechannels]){
+                    let index = list.indexOf(clickedblack)
+
+                    if (index !== -1) {
+                        list.splice(index, 1)
+                    }
+                }
+
+                displaychannels(blacklistchannels)
+
+            } else {
+                    if(!blacklistchannels.includes(clickedblack)) {
+                        blacklistchannels.push(clickedblack)
+                }
+                let newblacklist = channellist.filter(function(channel){
+                    return channel.id !== clickedblack.id
+                })
+                displaychannels(newblacklist)
+            }
+        })
+    })
 
     allstars.forEach(function(span, favchannel)
     {
@@ -69,7 +112,7 @@ fetch(furl)
             event.stopPropagation()
 
             let clickedchannel = channellist[favchannel]
-            if (span.textContent === "☆"){
+            if (span.textContent.trim() === "☆"){
             span.textContent = "★"
 
             favoritechannels.push(clickedchannel)
@@ -91,6 +134,7 @@ fetch(furl)
 
         })
     })
+
 }
      displaychannels(channels)
 
@@ -134,6 +178,7 @@ fetch(furl)
     allchannels.addEventListener("click", function(){
         displaychannels(channels)
         categorysidebar.classList.add("-translate-x-full")
+        currentchannel = channels
     })
 
     let favorite = document.querySelector("#favorite")
@@ -141,6 +186,13 @@ fetch(furl)
         displaychannels(favoritechannels)
         categorysidebar.classList.add("-translate-x-full")
         currentchannel = favoritechannels
+    })
+
+    let black = document.querySelector("#black-list")
+    black.addEventListener("click", function(){
+        displaychannels(blacklistchannels)
+        categorysidebar.classList.add("-translate-x-full")
+        currentchannel = blacklistchannels
     })
 
     let searchbar = document.querySelector("#search-bar")
