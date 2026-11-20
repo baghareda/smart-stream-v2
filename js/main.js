@@ -21,14 +21,29 @@ async function displaychannel(channel)
 
 const furl = "https://6afc2ab3892984c4494b034f.mockapi.io/channels"
 
+function updatechannel(chanel){
+    return fetch(furl + "/" + chanel.id, {
+        method: "PUT",
+        headers: {
+        "Content-Type": "application/json"
+        },
+        body: JSON.stringify(chanel)
+    })
+}
+
 fetch(furl)
 .then(function(response){
     return response.json()
 })
 .then(function(channels){
 
-    let favoritechannels = []
-    let blacklistchannels = []
+    let favoritechannels = channels.filter(function(chanel){
+        return chanel.isFavorite === true
+    })
+
+    let blacklistchannels = channels.filter(function(chanel){
+        return chanel.isBlackList === true
+    })
 
     function displaychannels(channellist){
 
@@ -81,6 +96,8 @@ fetch(furl)
             })
 
             if (currentchannel === blacklistchannels) {
+                clickedblack.isBlackList = false;
+                updatechannel(clickedblack)
                 let blackindex = blacklistchannels.indexOf(clickedblack)
                 blacklistchannels.splice(blackindex, 1)
 
@@ -98,9 +115,12 @@ fetch(furl)
                     if(!blacklistchannels.includes(clickedblack)) {
                         blacklistchannels.push(clickedblack)
                 }
+
+                clickedblack.isBlackList = true;
                 let newblacklist = channellist.filter(function(channel){
                     return channel.id !== clickedblack.id
                 })
+                updatechannel(clickedblack)
                 displaychannels(newblacklist)
             }
         })
@@ -117,8 +137,14 @@ fetch(furl)
 
             favoritechannels.push(clickedchannel)
 
+            clickedchannel.isFavorite = true
+            updatechannel(clickedchannel)
+
             }else {
             span.textContent = "☆"
+
+            clickedchannel.isFavorite = false;
+            updatechannel(clickedchannel)
 
             let chcekfavorite = currentchannel === favoritechannels
 
